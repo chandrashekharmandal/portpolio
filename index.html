@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandrashekhar Mandal | Backend & AI/Data Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>CM<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-glitch-wrapper">
+                <p class="hero-greeting">&gt; initializing_system<span class="blink">_</span></p>
+                <h1 class="hero-name glitch" data-text="CHANDRASHEKHAR MANDAL">CHANDRASHEKHAR MANDAL</h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-prefix">&gt;&gt;</span>
+                    <h2 class="hero-title" id="typed-text"></h2>
+                    <span class="typed-cursor">|</span>
+                </div>
+            </div>
+            <p class="hero-description">
+                Building intelligent data pipelines & AI-powered backend systems.
+                <br>Transforming raw data into actionable insights at scale.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span class="btn-text">View Projects</span>
+                    <span class="btn-icon"><i class="fas fa-rocket"></i></span>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span class="btn-text">Contact Me</span>
+                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                </a>
+            </div>
+        </div>
+        <div class="hero-terminal">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">cm@portfolio:~</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <p><span class="terminal-prompt">$</span> cat about.json</p>
+                <pre class="terminal-output">{
+  "name": "Chandrashekhar Mandal",
+  "role": "Backend & AI/Data Engineer",
+  "location": "Bangalore, India",
+  "interests": [
+    "Data Engineering",
+    "AI/ML Systems",
+    "Backend Architecture",
+    "Cloud Computing"
+  ],
+  "status": "Open to opportunities"
+}</pre>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                <span class="title-text">About Me</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image-frame">
+                        <div class="about-avatar">
+                            <div class="avatar-placeholder">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                        </div>
+                        <div class="frame-corner tl"></div>
+                        <div class="frame-corner tr"></div>
+                        <div class="frame-corner bl"></div>
+                        <div class="frame-corner br"></div>
+                    </div>
+                    <div class="about-status">
+                        <span class="status-dot"></span>
+                        <span>Available for work</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a <span class="highlight">Backend & AI/Data Engineer</span> passionate about designing and building 
+                        scalable, intelligent systems. With expertise in <span class="highlight">Python, Java, SQL, and cloud platforms</span>, 
+                        I specialize in crafting robust data pipelines, backend APIs, and AI/ML-powered solutions.
+                    </p>
+                    <p class="about-text">
+                        I have hands-on experience with <span class="highlight">Apache Spark, Kafka, Airflow, Docker, Kubernetes</span>, 
+                        and modern cloud services including <span class="highlight">AWS and GCP</span>. I thrive on solving complex 
+                        data challenges and turning messy data into clean, actionable intelligence.
+                    </p>
+                    <p class="about-text">
+                        Beyond code, I'm fascinated by the intersection of AI and data engineering — building systems that 
+                        don't just move data, but <span class="highlight">understand and act on it</span>.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bangalore, India</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>csramdev@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Open to Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                <span class="title-text">Experience</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Data Engineer</h3>
+                            <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2023 – Present</span>
+                        </div>
+                        <h4 class="timeline-company"><i class="fas fa-building"></i> Celebal Technologies, Jaipur</h4>
+                        <ul class="timeline-details">
+                            <li>Designed and optimized ETL/ELT pipelines using <strong>Apache Spark, Airflow</strong>, processing 10M+ records daily</li>
+                            <li>Built real-time data streaming solutions with <strong>Apache Kafka</strong> for event-driven architectures</li>
+                            <li>Implemented data warehouse solutions on <strong>AWS (Redshift, S3, Glue)</strong> reducing query time by 40%</li>
+                            <li>Developed REST APIs using <strong>Python (FastAPI/Flask)</strong> to serve ML model predictions</li>
+                            <li>Created automated data quality checks and monitoring dashboards</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Apache Spark</span>
+                            <span class="tech-tag">Kafka</span>
+                            <span class="tech-tag">Airflow</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <h3 class="timeline-role">Backend Developer Intern</h3>
+                            <span class="timeline-date"><i class="far fa-calendar-alt"></i> 2022 – 2023</span>
+                        </div>
+                        <h4 class="timeline-company"><i class="fas fa-building"></i> Tech Startup</h4>
+                        <ul class="timeline-details">
+                            <li>Built scalable <strong>RESTful APIs</strong> and microservices using Python and Java</li>
+                            <li>Implemented <strong>CI/CD pipelines</strong> using GitHub Actions and Docker</li>
+                            <li>Worked with <strong>PostgreSQL and MongoDB</strong> for data storage and retrieval</li>
+                            <li>Collaborated on AI model integration into production backend systems</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                <span class="title-text">Projects</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">AI-Powered Data Pipeline</h3>
+                    <p class="project-description">
+                        End-to-end intelligent data pipeline using Apache Spark and ML models for real-time 
+                        anomaly detection on streaming data. Processes 5M+ events per hour with automated alerting.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Apache Spark</span>
+                        <span>Kafka</span>
+                        <span>TensorFlow</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Real-Time Analytics Dashboard</h3>
+                    <p class="project-description">
+                        Built a real-time analytics platform with Kafka for event ingestion, Spark Streaming 
+                        for processing, and a React dashboard for visualization. Tracks KPIs across multiple data sources.
+                    </p>
+                    <div class="project-tech">
+                        <span>Kafka</span>
+                        <span>Spark Streaming</span>
+                        <span>Python</span>
+                        <span>React</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">NLP Text Classification Engine</h3>
+                    <p class="project-description">
+                        Built a production-grade NLP pipeline for automatic text classification using 
+                        Transformers and FastAPI. Deployed on AWS with Docker and served via REST API.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Transformers</span>
+                        <span>FastAPI</span>
+                        <span>Docker</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Cloud Data Warehouse ETL</h3>
+                    <p class="project-description">
+                        Designed a scalable ETL framework on AWS using Glue, S3, and Redshift. 
+                        Automated data ingestion from 10+ sources with Airflow orchestration and data quality checks.
+                    </p>
+                    <div class="project-tech">
+                        <span>AWS Glue</span>
+                        <span>Redshift</span>
+                        <span>S3</span>
+                        <span>Airflow</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Microservices Backend Platform</h3>
+                    <p class="project-description">
+                        Architected a microservices backend with FastAPI, deployed on Kubernetes. 
+                        Implemented service mesh, API gateway, and centralized logging with ELK stack.
+                    </p>
+                    <div class="project-tech">
+                        <span>FastAPI</span>
+                        <span>Kubernetes</span>
+                        <span>Docker</span>
+                        <span>PostgreSQL</span>
+                        <span>Redis</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card glass-card">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">ML Model Monitoring System</h3>
+                    <p class="project-description">
+                        Built an end-to-end ML monitoring solution tracking model drift, data quality, 
+                        and performance metrics. Automated retraining pipeline with MLflow and Airflow.
+                    </p>
+                    <div class="project-tech">
+                        <span>MLflow</span>
+                        <span>Python</span>
+                        <span>Airflow</span>
+                        <span>Grafana</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                <span class="title-text">Tech Stack</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Shell Scripting</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Engineering -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>Data Engineering</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Apache Spark</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Apache Kafka</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Apache Airflow</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">ETL/ELT Pipelines</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Modeling</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI / Machine Learning</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow / PyTorch</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-Learn</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NLP / Transformers</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MLflow / MLOps</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas / NumPy</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>Cloud & DevOps</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS (S3, Redshift, Glue, Lambda)</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Kubernetes</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CI/CD (GitHub Actions)</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">GCP (BigQuery, Dataflow)</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Redis</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Elasticsearch</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Frameworks -->
+                <div class="skill-category glass-card">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Backend & Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">FastAPI / Flask</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Spring Boot</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git / GitHub</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux / Bash</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Terraform</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="65"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                <span class="title-text">Education</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="education-grid">
+                <div class="education-card glass-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+                        <h4 class="edu-field">Computer Science & Engineering</h4>
+                        <p class="edu-school"><i class="fas fa-university"></i> University / College</p>
+                        <p class="edu-date"><i class="far fa-calendar-alt"></i> 2019 – 2023</p>
+                        <div class="edu-highlights">
+                            <span class="edu-tag">Data Structures</span>
+                            <span class="edu-tag">Algorithms</span>
+                            <span class="edu-tag">DBMS</span>
+                            <span class="edu-tag">Machine Learning</span>
+                            <span class="edu-tag">Cloud Computing</span>
+                        </div>
+                    </div>
+                    <div class="edu-decoration">
+                        <div class="hex-pattern"></div>
+                    </div>
+                </div>
+
+                <div class="education-card glass-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3 class="edu-degree">Certifications & Courses</h3>
+                        <h4 class="edu-field">Professional Development</h4>
+                        <ul class="certification-list">
+                            <li><i class="fas fa-award"></i> AWS Certified Cloud Practitioner</li>
+                            <li><i class="fas fa-award"></i> Google Data Analytics Professional Certificate</li>
+                            <li><i class="fas fa-award"></i> Apache Spark & Big Data Fundamentals</li>
+                            <li><i class="fas fa-award"></i> Machine Learning Specialization (Stanford)</li>
+                        </ul>
+                    </div>
+                    <div class="edu-decoration">
+                        <div class="hex-pattern"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">06.</span>
+                <span class="title-text">Get In Touch</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Build Something Amazing</h3>
+                    <p class="contact-text">
+                        I'm currently open to new opportunities in <span class="highlight">Backend Engineering</span>, 
+                        <span class="highlight">Data Engineering</span>, and <span class="highlight">AI/ML</span> roles. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:csramdev@gmail.com" class="contact-method glass-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>csramdev@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+916204403423" class="contact-method glass-card">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 6204403423</p>
+                            </div>
+                        </a>
+                        <a href="#" class="contact-method glass-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Bangalore, India</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/chandrashekharmandal" target="_blank" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/csmandal1002" target="_blank" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cs_mandal_10" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:csramdev@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key - messages go to csramdev@gmail.com -->
+                    <input type="hidden" name="access_key" value="a8b974e8-d674-469a-8429-58ac9177001e">
+                    <input type="hidden" name="subject" value="New Portfolio Contact Message">
+                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                    <input type="checkbox" name="botcheck" style="display: none;">
+                    
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject-field" name="subject_line" required placeholder=" ">
+                        <label for="subject-field"><i class="fas fa-tag"></i> Subject</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                        <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <div id="form-status" class="form-status"></div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>CM<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Designed & Built by <span class="highlight">Chandrashekhar Mandal</span></p>
+                <div class="footer-social">
+                    <a href="https://github.com/chandrashekharmandal" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/csmandal1002" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/cs_mandal_10" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer-copyright">&copy; 2026 Chandrashekhar Mandal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
